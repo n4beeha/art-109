@@ -1,0 +1,96 @@
+body{
+animation:change-color 10s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {background-color: antiquewhite;}
+    50% {background-color: blue;}
+    100% {background-color: aquamarine;}
+}
+.title {
+font-family: 'Courier New', Courier, monospace;
+margin: 50px;
+text-align: center;
+margin: 80px auto;
+animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg,0deg);}
+    100% {transform: skew(30deg, 20deg);}
+}
+
+.square {
+background-color: pink;
+width: 200px;
+height: 200px;
+border-radius: 10px;
+margin: 75px auto;
+transition: all 1s;
+}
+
+.square:hover{
+background-color: coral;
+transform: rotate(180deg);
+}
+
+.button-div {
+    text-align: center;
+    margin: 75px;
+}
+
+.button {
+    background-color: blueviolet;
+    color: #ffffff;
+    width: 150px;
+    height: 25px;
+    padding: 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover{
+background-color: rgb(156, 156, 233);
+color:black;
+transform: scale(1.5);
+}
+
+.circle{
+background-color: rgb(160, 46, 65);
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin: 75px left;
+transition: all 5s;
+}
+
+.circle:hover{
+background-color: rgb(224, 138, 205);
+translate: 75vw;
+}
+
+.loading{
+    background-color: green;
+    animation: stretch 5s 3 normal;
+    width: 90vw;
+}
+
+@keyframes stretch{
+    0% {width: 100px;}
+    100% {width: 90vw;}
+}
+
+.spinner{
+    background-color: rgb(108, 200, 108);
+    animation: spin 3s infinite;
+    width: 10vw;
+    height: 100px;
+    margin: auto
+}
+
+@keyframes spin{
+    0% {transform: skew(0deg)}
+    100% {transform: skew(180deg)}
+}
