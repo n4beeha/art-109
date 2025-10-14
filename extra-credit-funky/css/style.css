@@ -1,0 +1,101 @@
+body {
+    animation:change-color 2s infinite ;
+    
+
+}
+
+@keyframes change-color {
+    0% {background-color: rgb(165, 2, 2);}
+    25% {background-color:rgb(189, 109, 4)}
+    50% {background-color: rgb(65, 0, 126);}
+    75%{background-color: rgb(110, 0, 48);}
+    100% {background-color: rgb(0, 0, 0);}
+}
+
+@keyframes change-color2 {
+    0% {background-color: antiquewhite;}
+    25% {background-color:rgb(213, 198, 236)}
+    50% {background-color: rgb(171, 218, 192);}
+    75%{background-color: rgb(213, 191, 233);}
+    100% {background-color: rgb(174, 211, 199);}
+}
+
+header {
+    text-align: center;
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    animation: skew 2s infinite alternate;
+    
+}
+@keyframes skew {
+    0% {transform: skew(0deg,0deg);}
+    100% {transform: skew(70deg, 70deg);}
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+      font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+    animation: change-size, 2s infinite alternate;
+    
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+
+
+
+p {
+    max-width: 800px;
+    margin: 50px auto;
+      font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+   font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+    
+    animation:change-color2 2s infinite alternate;
+}
+
+.section-1 {
+    animation:  rotate 2s infinite alternate;    
+}
+
+
+@keyframes change-size {
+from{transform: scale(0.5);}
+to{transform: scale(2);}
+
+}
+@keyframes rotate {
+from{transform: rotate(0deg);}
+to{transform: rotate(180deg);}
+
+}
+
+
+.section-2 {
+    
+}
+
+img {
+    max-width: 300px;
+}
+
+h1 {
+    
+}
+
+p {
+
+}
