@@ -72,7 +72,7 @@ function splash()  {
         this.sceneManager.showScene( help );
       }
                             // title,lx,ly, btnW, btnH, upcolor, rollcolor, downcolor
-      btnevent2 = checkButtonPress(leaf1,1160,65,84,84,color(120,180,100),color(100),color(250));
+      btnevent2 = checkButtonPress(leaf1,750,100,84,84,color(120,180,100),color(100),color(250));
       if (btnevent2) {   // main or next scene
         btnevent2 = false;
          playshortsound();
@@ -82,11 +82,17 @@ function splash()  {
       push();
       textAlign(CORNER);
       noStroke();
-      fill(252, 202, 131);
-      textSize(36);
-      text("Click the leaf to open the scrapbook.",37, 390);
-      textSize(150);
-      text("WELCOME.",37,350);
+      fill(162, 134, 104);
+      textSize(30);
+      text("Click the leaf to open.",17, 392);
+      textSize(90);
+      text("WELCOME.",18,353);
+      fill(74, 21, 36);
+      textSize(30);
+      text("Click the leaf to open.",15, 390);
+      textSize(90);
+      text("WELCOME.",15,350);
+      
       pop();
       btnevent3 = checkButtonPress(creditbutton,13,70,47,47,color(120,180,100),color(100),color(250));
       if (btnevent3) {   // main or next scene
@@ -207,11 +213,11 @@ function main()  {
       this.sceneManager.showScene( bfashow );
     }
 
-    btnevent4 = checkButtonPress(notlivingbutton,918,270,145, 116.76, color(220,100,100),color(100),color(250));  
-    if (btnevent4) { // help
-      btnevent4 = false;
-      this.sceneManager.showScene( notliving );
-    }
+    // btnevent4 = checkButtonPress(notlivingbutton,918,270,145, 116.76, color(220,100,100),color(100),color(250));  
+    // if (btnevent4) { // help
+    //   btnevent4 = false;
+    //   this.sceneManager.showScene( notliving );
+    // }
 
     // btnevent5 = checkButtonPress(icecreambutton,470,205,160, 167.20, color(220,100,100),color(100),color(250));  
     // if (btnevent5) { // help
@@ -747,8 +753,8 @@ function credits() {
   {
    console.log("We are at entering for credits");
    pie.visible = true;
-   pie.position.x = 100;
-   pie.position.y = 100;
+   pie.position.x = 1200;
+     pie.position.y = 370;
 
    halloweenaudio.stop();
    makerfaireaudio.stop();
@@ -799,13 +805,13 @@ this.sceneManager.showScene( main );
      btnevent1 = false;
      this.sceneManager.showScene( help );
    }
-       // title,lx,ly, btnW, btnH, upcolor, rollcolor, downcolor
-       btnevent2 = checkButtonPress(startbutton,500,62,14,575,color(120,180,100),color(100),color(250));
-       if (btnevent2) {   // main or next scene
-         btnevent2 = false;
-           playshortsound();
-           this.sceneManager.showScene( main );
-       }
+      //  // title,lx,ly, btnW, btnH, upcolor, rollcolor, downcolor
+      //  btnevent2 = checkButtonPress(startbutton,500,62,14,575,color(120,180,100),color(100),color(250));
+      //  if (btnevent2) {   // main or next scene
+      //    btnevent2 = false;
+      //      playshortsound();
+      //      this.sceneManager.showScene( main );
+      //  }
     //    fill("black");
     // textAlign(LEFT);
     // textSize(25);
@@ -813,9 +819,9 @@ this.sceneManager.showScene( main );
     push();
     textAlign(LEFT);
     textSize(25);
-    stroke(242, 204, 179);
-    fill(242, 204, 179);
-    text( "Illustrations, Animations, and Code\nby Nabeeha\n\nSound Effects from ZapSplat\n\nDancing Through Life by the\nOriginal Broadway Cast of Wicked\n\nGangstas Paradise by Coolio\n\nIts Not Living If Its Not With You\nby the 1975\n\nMarjorie by Taylor Swift", 875,200);
+    noStroke();
+    fill(74, 21, 36);
+    text( "Illustrations, Animations, and Code\nby Nabeeha Ahsan\n\nPaper and tape textures, other \nfound assets from Pinterest\n\nSound Effects from ZapSplat\n\nNexus Poster by Rhyme Balatbat\n\nSomebody Else by the 1975\n\nGolden by HUNTRIX\n\nSidelines by Phoebe Bridgers\n", 500,100);
   pop();
   }
  
@@ -839,8 +845,8 @@ let btnevent1=false;
     {
      console.log("We are at entering for help");
      pie.visible = true;
-     pie.position.x = 100;
-     pie.position.y = 100;
+     pie.position.x = 1200;
+     pie.position.y = 370;
 
      halloweenaudio.stop();
      makerfaireaudio.stop();
@@ -858,9 +864,9 @@ let btnevent1=false;
       fill("black");
       push();
       textAlign(LEFT);
-      textSize(25);
-      stroke(46, 31, 26);
-      fill(46, 31, 26);
+      textSize(27);
+      noStroke();
+      fill(74, 21, 36);
       text( "To navigate the scrapbook,\nclick a photo or song lyric\nand recieve a reminder or\nmemory.\n\nClick on the pie at any time\nto return to the main page." , 475,320);
 pop();
       
@@ -906,7 +912,7 @@ function checkButtonPress(i,bx,by,boxW,boxH,upcolor,ovcolor,dncolor) {
 
     if (!mouseIsPressed) {
       stroke(255);
-      tint(255, 129, 56);
+      //tint(255, 129, 56);
       btnc = ovcolor;
       btnstate = false;
 
@@ -919,7 +925,7 @@ function checkButtonPress(i,bx,by,boxW,boxH,upcolor,ovcolor,dncolor) {
 
   } else {
     stroke(255);
-    tint(255);
+    //tint(255);
     btnc = upcolor;
     overBox = false;
   }
