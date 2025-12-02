@@ -1,0 +1,90 @@
+.nav_pad{
+	padding-top:5px;
+  }
+
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right:15px;
+}
+
+.navbar-link {
+    font-family: "Silkscreen", sans-serif;
+	text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #4db9e8;
+}
+body{
+	margin: 0;
+	text-align: left;
+	font-family: 'Chakra Petch', 'Arial', sans-serif;
+	font-size: 17px;
+	line-height: 25px;
+
+}
+.chakra-petch-regular {
+	font-family: "Chakra Petch", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+
+h1{
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header img{
+	border-radius: 30px;
+	width: 400px;
+	border: 5px solid white;
+}
+
+.portrait-caption{
+	font-family: "Silkscreen", sans-serif;
+	color: #999999;
+	font-style: italic;
+	margin-top: 0;
+	max-width: 500px;
+	text-align: center;
+	margin:auto
+}
+
+main img{
+		max-width: 100%;
+		display: block;
+		margin: auto;
+}
+
+.portrait-img{
+		width: 500px;
+}
+
+.landscape-img{
+		width: 800px;
+}
+
+
+
+a{
+		color: #187ca8;
+}
+a:hover{
+	color: #fac8ee;
+}
+
+
+
+p.caption{
+	font-family: "Silkscreen", sans-serif;
+	color: #999999;
+	font-style: italic;
+	margin-top: 0;
+	text-align: center;
+}
