@@ -1,0 +1,67 @@
+/* 
+COLOR PALETTE
+#4F000B maroon
+#858786 grey
+#08415C ocean blue
+#FFF8F0 white
+#0D21A1 royal blue
+ */
+
+ /* GLOBAL STYLES
+ ---------------------------*/
+body {
+    background: #FFF8F0;
+}
+
+/* links */
+a {
+    color: #0D21A1;
+}
+
+a:hover {
+    color: #08415C;
+    text-decoration: none;
+}
+
+footer a {
+color:#FFF8F0
+}
+
+footer a:hover{
+    color:#0D21A1;
+}
+
+.btn {
+    background:#4F000B;
+}
+ /* HOME
+ ---------------------------*/
+h1 {
+    color: #4F000B;
+}
+.home{
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.5);
+}
+#highlight {
+    background: yellow;
+}
+ /* RESUME
+ ---------------------------*/ 
+  /* PROFILE
+ ---------------------------*/
+  /* PROJECTS
+ ---------------------------*/
+  /* WORK EXPERIENCE
+ ---------------------------*/
+  /* EDUCATION
+ ---------------------------*/
+  /* FOOTER
+ ---------------------------*/
+ footer{
+    background: #858786;
+    color: #FFF8F0;
+ }
