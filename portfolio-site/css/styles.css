@@ -62,10 +62,19 @@ h1 {
 .home{
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .home .content-wrapper {
-    background: rgb(255 255 255 / 0.5);
+    
+    flex: 1 0 auto;
 }
+
+.content-bg {
+    background: rgb(255 255 255 / 0.8);
+    padding: 30px;
+}
+
 #highlight {
     background: yellow;
 }
@@ -110,6 +119,13 @@ margin-right: 20px;
 
   /* WORK EXPERIENCE
  ---------------------------*/
+
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
   /* EDUCATION
  ---------------------------*/
   /* FOOTER
@@ -117,6 +133,9 @@ margin-right: 20px;
  footer{
     background: #858786;
     color: #FFF8F0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
  }
 
  .socials {
@@ -125,7 +144,12 @@ margin-right: 20px;
  }
 .socials li {
     display:inline-block;
+    margin-left: 10px;
 }
  .socials img {
     width: 32px;
+ }
+
+ .socials img:hover {
+opacity: 0.5
  }
