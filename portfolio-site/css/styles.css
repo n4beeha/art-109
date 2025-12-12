@@ -9,17 +9,31 @@ COLOR PALETTE
 
  /* GLOBAL STYLES
  ---------------------------*/
+ /* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
 body {
     background: #FFF8F0;
+    margin: 0;
 }
 
 /* links */
 a {
-    color: #0D21A1;
+    color: #5c659e;
 }
 
 a:hover {
-    color: #08415C;
+    color: #8d8f91;
     text-decoration: none;
 }
 
@@ -33,6 +47,12 @@ footer a:hover{
 
 .btn {
     background:#4F000B;
+}
+
+.content-wrapper {
+margin: 0 auto;
+padding: 30px;
+max-width: 900px;
 }
  /* HOME
  ---------------------------*/
@@ -51,10 +71,43 @@ h1 {
 }
  /* RESUME
  ---------------------------*/ 
+ .resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    content:"";
+    display: block;
+    height: 375px;
+ }
+
+ .resume-section {
+    margin-bottom: 50px;
+ }
+
+  .resume-section h2 {
+    border-bottom: 2px dashed #08415C;
+ }
+
+ .download-link {
+position: fixed;
+top: 5px;
+left: 5px;
+ }
   /* PROFILE
  ---------------------------*/
   /* PROJECTS
  ---------------------------*/
+
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+width: 300px;
+float: left; 
+margin-right: 20px;    
+}
+
   /* WORK EXPERIENCE
  ---------------------------*/
   /* EDUCATION
@@ -64,4 +117,15 @@ h1 {
  footer{
     background: #858786;
     color: #FFF8F0;
+ }
+
+ .socials {
+    list-style-type: none;
+    padding:0;
+ }
+.socials li {
+    display:inline-block;
+}
+ .socials img {
+    width: 32px;
  }
