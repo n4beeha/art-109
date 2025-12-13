@@ -1,15 +1,28 @@
-console.log("Survivors");
+document.querySelector("#image-0").addEventListener("click", function(){
+    document.querySelector("#image-0").style.display = "none";
+})
 
-let  pageTitle = document.querySelector("#page-title");
-let bodyFill =  document.querySelector("body");
+document.querySelector("#image-1").addEventListener("click", function(){
+    document.querySelector("#image-1").style.visibility = "hidden";
+})
 
-//javascript timeout changes h1 title after 3 seconds
-setTimeout(function(){
-pageTitle.style.color = "pink";
-}, 3000);
+document.querySelector("#image-2").addEventListener("click", function(){
+    document.querySelector("#image-2").style.visibility = "hidden";
+})
 
-// Click event on header changes background color
-document.querySelector("header").onclick = function(){
-    //console.log("clicked header");
-   bodyFill.style.backgroundColor = "black";
-}
+document.querySelector("#image-3").addEventListener("click", function(){
+    document.querySelector("#image-3").style.visibility = "hidden";
+})
+
+document.querySelector("#image-4").addEventListener("click", function(){
+    document.querySelector("#image-4").style.visibility = "hidden";
+})
+
+document.querySelector("#image-5").addEventListener("click", function(){
+    document.querySelector("#image-5").style.visibility = "hidden";
+})
+
+document.querySelector("#image-6").addEventListener("click", function(){
+    document.querySelector("#image-6").style.visibility = "hidden";
+})
+
