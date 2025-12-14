@@ -1,72 +1,114 @@
 /* 
 COLOR PALETTE
-#4F000B maroon
+#0D21A1 maroon
 #858786 grey
 #08415C ocean blue
 #FFF8F0 white
 #0D21A1 royal blue
  */
 
- /* GLOBAL STYLES
+/* GLOBAL STYLES
  ---------------------------*/
- /* 
+/* 
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
 html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: border-box;
+    font-size: 62.5%
+        /* set default to 10px */
 }
 
-html, body {
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
     height: 100%;
 }
+
 body {
     background: #FFF8F0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.7rem;
 }
 
 /* links */
 a {
-    color: #5c659e;
+    color: #858786;
 }
 
 a:hover {
-    color: #8d8f91;
+    color: #08415C;
     text-decoration: none;
 }
 
 footer a {
-color:#FFF8F0
+    color: #FFF8F0
 }
 
-footer a:hover{
-    color:#0D21A1;
+footer a:hover {
+    color: #0D21A1;
 }
 
 .btn {
-    background:#4F000B;
+    background: #0D21A1;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 7px;
+    letter-spacing: .1em;
+    text-decoration: none;
 }
 
 .content-wrapper {
-margin: 0 auto;
-padding: 30px;
-max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
 }
- /* HOME
+
+/* HOME
  ---------------------------*/
 h1 {
-    color: #4F000B;
+    color: #0D21A1;
 }
-.home{
+
+.home {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
+
 .home .content-wrapper {
-    
+
     flex: 1 0 auto;
 }
 
@@ -76,80 +118,174 @@ h1 {
 }
 
 #highlight {
-    background: yellow;
+    background: #858786;
 }
- /* RESUME
- ---------------------------*/ 
- .resume header::before {
+
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+
+    padding: 10px;
+}
+.content-bg {
+    padding: 20px;
+}
+}
+
+/* RESUME
+ ---------------------------*/
+.resume header::before {
     background: url(../images/bg-home-office-studio.jpg) center;
     background-size: cover;
-    content:"";
+    content: "";
     display: block;
     height: 375px;
- }
+}
 
- .resume-section {
+.resume-section {
     margin-bottom: 50px;
- }
+}
 
-  .resume-section h2 {
+.resume-section h2 {
     border-bottom: 2px dashed #08415C;
- }
+}
 
- .download-link {
-position: fixed;
-top: 5px;
-left: 5px;
- }
-  /* PROFILE
- ---------------------------*/
-  /* PROJECTS
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.4rem;
+}
+
+/* PROJECTS
  ---------------------------*/
 
 .project-item {
-    display: flow-root;
     margin: 30px 0;
 }
 
 .project-item img {
-width: 300px;
-float: left; 
-margin-right: 20px;    
+    width: 300px;
 }
 
-  /* WORK EXPERIENCE
+@media screen and (min-width:580px) {
+    .project-item {
+        display: flow-root;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 530px)and (max-width:579px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width:100%
+    }
+}
+
+@media screen and (max-width:500px) {
+    .project-item img {
+        width:100%;
+        margin-bottom:10px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .download-link {
+        position:absolute;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .resume header::before {
+        height: 200px;
+    }
+
+    h1{
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:1.5rem;
+    }
+    h3{
+        font-size:1.3rem;
+    }
+}
+
+/* WORK EXPERIENCE
  ---------------------------*/
 
 .work-item {
+    margin: 30px 0;
+}
+
+
+
+@media screen and (min-width:700px) {
+    .work-item {
     display: grid;
     grid-template-columns: 300px 1fr;
     column-gap: 20px;
 }
+.work-details p:first-child {
+    margin: 0;
+}
+}
 
-  /* EDUCATION
+/* EDUCATION
  ---------------------------*/
-  /* FOOTER
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+/* FOOTER
  ---------------------------*/
- footer{
-    background: #858786;
+footer {
+    background: #08415C;
     color: #FFF8F0;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5
+}
+
+@media screen and (min-width: 860px){
+    
+    footer{
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
- }
-
- .socials {
-    list-style-type: none;
-    padding:0;
- }
-.socials li {
-    display:inline-block;
-    margin-left: 10px;
+    }
 }
- .socials img {
-    width: 32px;
- }
-
- .socials img:hover {
-opacity: 0.5
- }
+@media screen and (max-width: 859px){
+    
+    footer{
+    text-align: center;
+    padding: 10px;
+    }
+}
